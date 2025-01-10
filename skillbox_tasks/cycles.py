@@ -125,11 +125,47 @@ For 4
 """
 For 4
 """
-wake_up = int(input())
-N = int(input())
-volume = 0
-cal = 0
-for i in range (wake_up, 23, 3):
-    cal +=N
-    volume += 1
-print (cal, volume)
+# wake_up = int(input())
+# N = int(input())
+# volume = 0
+# cal = 0
+# for i in range (wake_up, 23, 3):
+#     cal +=N
+#     volume += 1
+# print (cal, volume)
+
+"""
+For 5
+"""
+
+# N = int(input())
+# for i in range(N+1):
+#     for j in range(N+1):
+#         print(i+j, end="\t")
+#     print()
+
+"""
+For 6
+"""
+# N = int(input())
+# for i in range(N+1):
+#     for j in range(N+1):
+#         if i+j > N:
+#             continue
+#         else:
+#             print(i+j, end="\t")
+#     print()
+
+"""
+For 6 Блок else для цикла
+"""
+
+while True:
+    for attempt in range (1,4):
+        pin = int(input())
+        if pin == 1234:
+            print('Верный пин!')
+            break
+        print('Неверный код, осталось попыток', 3-attempt)
+    else:
+        print('Ваша карта заблокирована')
